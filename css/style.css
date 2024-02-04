@@ -32,7 +32,6 @@ button {
   height: 100vh;
   width: 100%;
   margin: 0;
-
   display: grid;
   gap: 10px;
 
@@ -206,6 +205,18 @@ img {
   padding: 15px 10px;
   font-size: .30em;
   font-weight: 500;
+}
+
+.svg-wrapper {
+  background: green;
+  padding: 5px;
+  border: 2px solid purple;
+  border-radius: 100%;
+}
+
+svg {
+  width: 70px;
+  height: 60px;
 }
 
 
