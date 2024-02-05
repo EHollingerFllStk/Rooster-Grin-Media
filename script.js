@@ -1,4 +1,4 @@
-// console.log('Hello')
+//////Code for Carousel///////
 
 const slides = document.getElementsByClassName('carousel-item')
 const nextButton = document.getElementById('carousel-button-next')

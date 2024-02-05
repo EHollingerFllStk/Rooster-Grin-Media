@@ -1,3 +1,15 @@
+:root {
+  --button1-color: #4c00a4;
+  --primary-color: #DCDCDC;
+  --button2-color: #FF5F1F;
+  /* Define a root variable for primary color */
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: larger;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,23 +20,20 @@
 [class ^="box-"] {
   display: grid;
   place-items: center;
-  border: solid 5px orangered;
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
-  color: #aaa;
 }
 
-/* body {
-
-  height: 100vh;
-} */
 h1 {
-  color: orange;
+  color: var(--button2-color);
   z-index: 100;
 }
 
-button {
+.button {
+  text-decoration: none;
+  z-index: 100;
+}
+
+.button2 {
+  text-decoration: none;
   z-index: 100;
 }
 
@@ -34,7 +43,6 @@ button {
   margin: 0;
   display: grid;
   gap: 10px;
-
 }
 
 .hero {
@@ -117,44 +125,24 @@ h4 {
 .box-2 {
   margin: 0;
   padding: 50px;
-
 }
-
-/* .top-right {
-  z-index: 100;
-  position: absolute;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  left: 0;
-  right: 0;
-  bottom: 0;
-} */
 
 .nested {
   margin-left: 40%;
 }
 
 #title {
-  /* margin-bottom: -50px; */
-  /* margin-left: 100px; */
-  /* width: 50%; */
-  /* border: 3px solid green;
-  padding: 10px; */
   font-size: 1.25em;
-  color: plum;
+  color: var(--button1-color);
 }
 
 .lorem {
-
-  /* margin-left: 100px; */
-  /* width: 50%; */
   padding: none;
   font-size: .75em;
 }
 
 .button {
-  color: plum;
+  color: var(--button1-color);
   background-color: transparent;
   border: none;
   /* margin-left: -60px;
@@ -182,35 +170,26 @@ img {
 
 .grid-content {
   grid-column: 3/5;
-  /* align-self: left; */
 }
 
 .grid-content2 {
   grid-column: 3/5;
   grid-row: 2;
-  /* align-self: left; */
 }
 
 .grid-content {
   grid-column: 3/5;
-  /* align-self: left; */
 }
 
 .grid-content2 {
   grid-column: 3/5;
   grid-row: 2;
-  /* align-self: left; */
 }
 
 .button2 {
-  /* 
-  margin: 30%; */
   color: white;
-  background-color: orange;
+  background-color: var(--button2-color);
   border: none;
-  /* margin-left: -5px; */
-  /* margin-top: -70px; */
-  /* width: 30%; */
   padding: 15px 10px;
   font-size: .30em;
   font-weight: 500;
@@ -219,46 +198,37 @@ img {
 .grid-content3 {
   grid-column: 3/5;
   grid-row: 2;
-  /* align-self: left; */
 }
 
 .grid-content4 {
   grid-column: 3/5;
-  /* align-self: left; */
 }
 
 .button2 {
-  /* 
-  margin: 30%; */
   color: white;
-  background-color: orange;
+  background-color: var(--button2-color);
   border: none;
-  /* margin-left: -5px; */
-  /* margin-top: -70px; */
-  /* width: 30%; */
   padding: 15px 10px;
   font-size: .30em;
   font-weight: 500;
 }
 
 .nested2 {
-  /* margin: 20px auto; */
   width: 400px;
   height: 400px;
-  /* background-color: #fff; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row: auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 
+
 }
 
 .svg-wrapper {
-  /* background: green; */
+
   margin: 0;
   padding: 0px;
-  /* border: 2px solid purple; */
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -276,26 +246,19 @@ img {
 }
 
 .svgButton {
-  /* Add any button styles you want here */
   cursor: pointer;
   background-color: white;
-  /* Change to your desired background color */
-  /* color: white; */
-  /* Change to your desired text color */
-  /* border: purple; */
   padding: 10px;
   border-radius: 100%;
 
 }
 
 .svgButton:hover {
-  background-color: purple;
+  background-color: var(--button1-color);
   transition: 1s ease-in;
 }
 
-
-
-
+/* CAROUSEL STYLING */
 
 .carousel {
   max-width: 600px;
@@ -429,6 +392,7 @@ img {
 
   .wrapper .box-6 {
     grid-column: 7/13;
+    background-color: #DCDCDC;
   }
 
   .wrapper .box-7 {
@@ -440,10 +404,12 @@ img {
   }
 
   .wrapper .box-9 {
+
     grid-column: 7/13;
   }
 
   .wrapper .box-10 {
+    background-color: #DCDCDC;
     grid-column: 1/13;
   }
 
@@ -505,7 +471,7 @@ img {
 
   h4 {
     font-weight: 700;
-    color: purple;
+    color: var(--button1-color);
   }
 
   #hero-btn {
@@ -530,7 +496,7 @@ img {
   .button2 {
     margin: 200px;
     color: white;
-    background-color: orange;
+    background-color: var(--button2-color);
     border: none;
     /* margin-left: -5px; */
     /* margin-top: -70px; */
