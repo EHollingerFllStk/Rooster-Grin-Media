@@ -63,14 +63,14 @@ button {
   }
 }
 
-#logo-white {
+.logo {
   display: grid;
-  grid-column-start: start;
+  grid-column: 1;
+  grid-row: 1;
   max-width: 100px;
   height: 200px;
   margin-left: 50px;
 }
-
 
 .outline {
   color: transparent;
@@ -241,24 +241,36 @@ img {
   font-weight: 500;
 }
 
+.nested2 {
+  /* margin: 20px auto; */
+  width: 400px;
+  height: 400px;
+  /* background-color: #fff; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
 .svg-wrapper {
   /* background: green; */
-  padding: 5px;
+  /* padding: 5px; */
   border: 2px solid purple;
   border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-svg {
-  width: 70px;
-  height: 60px;
-}
 
-.svg-wrapper {
-  background: green;
-  padding: 5px;
-  border: 2px solid purple;
+
+.home {
+  width: 100px;
+  height: 150px;
 
 }
+
 
 .carousel {
   max-width: 600px;
