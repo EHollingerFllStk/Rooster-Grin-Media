@@ -23,8 +23,7 @@ Like most projects, I did face some blockers on this project. These include:
   time on other aspects of the project such more functionality and personality
   that I like to put into my projects as finishing touches.
 - I had difficulty cloning/forking the repo and received errors working with the
-  forked repo. I am still not sure what I was doing wrong there.
--
+  forked repo. I am still not sure what I was doing wrong.
 
 ## Fun
 
